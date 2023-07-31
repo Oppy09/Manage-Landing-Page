@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: true,
   content: ["./**/*.{html,js}"],
   theme: {
     screens: {
@@ -9,6 +10,9 @@ module.exports = {
       xl: '1440px',
     },
     extend: {
+      spacing: {
+        '128': "36rem",
+      },
       colors: {
         brightred: "hsl(12, 88%, 59%)",
         darkblue: "hsl(228, 39%, 23%)",

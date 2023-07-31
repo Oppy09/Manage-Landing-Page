@@ -13,19 +13,19 @@
 </head>
 <body>
   <main>
-    <div class="px-16 py-10 flex justify-between " id="nav-bar">
+    <div class="px-16 py-10 flex justify-between max-sm:px-8" id="nav-bar">
       <div class="logo">
         <figure>
           <img src="./images/logo.svg" alt="manage-logo">
         </figure>
       </div>
       <div class="sections mobile-sc">
-        <div class="hamburger hidden">
+        <div class="hamburger sm:hidden">
         <figure>
           <img src="./images/icon-hamburger.svg" class="nav-btn" alt="hamburger-icon">
         </figure>
         </div>
-        <ul class="flex gap-10">
+        <ul class="flex gap-10 max-sm:hidden">
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#product">Product</a></li>
           <li><a href="#about-us">About Us</a></li>
@@ -34,49 +34,49 @@
         </ul>
       </div>
       <div class="button">
-        <button class="px-8 py-2 -mt-2 rounded-3xl bg-brightred hover:opacity-50 hover:text-white" type="submit">Get Started</button>
+        <button class="px-8 py-2 -mt-2 rounded-3xl bg-brightred hover:opacity-50 hover:text-white max-sm:hidden" type="submit">Get Started</button>
       </div>
     </div>
-    <div class="top-container px-16">
-      <section id="product" class="flex w-full justify-between ">
-        <div class="product-description w-1/2">
-          <div class="details w-3/4">
-            <header>
-              <h1 class="text-5xl font-bold text-darkblue">Bring everyone together to build better products.</h1>
+    <div class="top-container sm:px-16">
+      <section id="product" class="flex w-full justify-between max-sm:flex-col-reverse">
+        <div class="product-description sm:w-1/2 max-sm:text-center">
+          <div class="details sm:w-3/4">
+            <header class="max-sm:text-center">
+              <h1 class="text-5xl font-bold text-darkblue  max-sm:text-4xl max-sm:leading-tight">Bring everyone together to build better products.</h1>
             </header>
-            <div class="product-details py-8 w-3/4">
+            <div class="product-details py-8 sm:w-3/4 max-sm:px-8">
               <p class="contents leading-loose text-gray-500 opacity-50">Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view.
               </p>
             </div>
-            <button type="submit" class="px-8 py-2 rounded-3xl bg-brightred hover:opacity-50 hover:text-white">Get Started</button>
+            <button type="submit" class="px-8 py-2 rounded-3xl bg-brightred hover:opacity-50 hover:text-white max-sm:text-center">Get Started</button>
           </div>
         </div>
-        <div class="product-illustration w-1/2">
+        <div class="product-illustration sm:w-1/2">
           <figure>
-            <img src="./images/illustration-intro.svg" alt="">
+            <img class="max-sm:w-full, h-auto" src="./images/illustration-intro.svg" alt="">
           </figure>
         </div>
       </section>
     </div>
-    <div class="middle-container px-16">
-      <section id="about-us" class="flex">
-        <div class="activity w-1/2 py-16 whitespace-normal">
-          <header class="w-3/4">
-            <h2 class="text-4xl font-bold text-darkblue">What’s different about Manage?</h2>
+    <div class="middle-container sm:px-16">
+      <section id="about-us" class="flex max-sm:flex-col">
+        <div class="activity max-sm:text-center sm:w-1/2 py-16 whitespace-normal">
+          <header class="sm:w-3/4 max-sm:w-full">
+            <h2 class="max-sm:text-3xl max-sm:w-3/4 max-sm:mx-auto text-4xl font-bold text-darkblue">What’s different about Manage?</h2>
           </header>
-          <div class="details w-7/12 py-6">
+          <div class="details max-sm:px-4 sm:w-7/12 py-6">
             <p class="contents leading-7 text-gray-500 opacity-50">Manage provides all the functionality your team needs, without 
               the complexity. Our software is tailor-made for modern digital 
               product teams.</p>
           </div>
         </div>
-        <div class="activity-details w-1/2 py-16 h-full flex-col gap-32">
+        <div class="activity-details sm:w-1/2 py-16 h-full flex-col gap-32">
           <div class="progress-tracking">
             <div class="description">
-              <header>
+              <header class="max-sm:bg-palered">
                 <div class="bullets inline-block w-16 px-6 py-1 rounded-xl text-center text-white font-bold bg-brightred">01</div>
-                <h3 class="inline text-darkblue font-bold text-xl ml-3.5">Track company-wide progress</h3>
+                <h3 class="inline text-darkblue font-bold text-xl max-sm:text-sm ml-3.5">Track company-wide progress</h3>
               </header>
               <div class="details w-full px-20 my-4">
                 <p class="contents text-gray-500 opacity-50">See how your day-to-day tasks fit into the wider vision. Go from
@@ -118,8 +118,8 @@
       <header>
         <h2 class="text-center text-4xl font-bold text-darkblue">What they’ve said</h2>
       </header>
-      <section id="careers" class="w-screen mt-24 flex gap-10">
-        <div class="testimonials w-96 border-2 text-center px-4 pb-4">
+      <section id="careers" class="grid grid-flow-col mt-24 gap-10 auto-cols-[minmax(0, _92%)] overflow-x-auto auto-rows-min snap-mandatory scroll-ps-4 scroll-pe-4">
+        <div class="testimonials  w-128 z-0 bg-gray-50 text-center px-4 pb-4 snap-start relative ">
           <figure>
             <img class="w-10 mx-auto" src="./images/avatar-anisha.png" alt="testimonials-avatar-image">
           </figure>
@@ -132,7 +132,7 @@
             </p>
           </div>
         </div>
-        <div class="testimonials w-96 border-2 text-center px-4">
+        <div class="testimonials w-128 bg-gray-50 text-center px-4 pb-4">
           <figure>
             <img class="w-10 mx-auto" src="./images/avatar-ali.png" alt="testimonials-avatar-image">
           </figure>
@@ -145,7 +145,7 @@
               more focused.”</p>
           </div>
         </div>
-        <div class="testimonials w-96 border-2 text-center px-4">
+        <div class="testimonials w-128 bg-gray-50 text-center px-4 pb-4">
           <figure>
             <img class="w-10 mx-auto" src="./images/avatar-richard.png" alt="testimonials-avatar-image">
           </figure>
@@ -157,7 +157,7 @@
               and focused. I can’t stop recommending them to everyone I talk to!”</p>
           </div>
         </div>
-        <div class="testimonials w-96 border-2 text-center px-4">
+        <div class="testimonials w-128 bg-gray-50 text-center px-4 pb-4">
           <figure>
             <img class="w-10 mx-auto" src="./images/avatar-shanai.png" alt="testimonials-avatar-image">
           </figure>
