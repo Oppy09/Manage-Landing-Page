@@ -15,25 +15,19 @@
   <main>
     <nav class="px-16 py-10 relative flex items-center justify-between max-sm:px-8" id="nav-bar">
       <div class="logo">
-        <figure>
-          <img class="hover:cursor-pointer" src="./images/logo.svg" alt="manage-logo">
-        </figure>
+        <img class="hover:cursor-pointe inline" src="./images/logo.svg" alt="manage-logo">
       </div>
-      <div class="sections mobile-sc">
-        <div class="hamburger sm:hidden">
-        <figure>
-          <img src="./images/icon-hamburger.svg" class="nav-btn max-sm:absolute max-sm:top-10 right-6" name="hamburger" alt="hamburger-icon">
-          <img src="./images/icon-close.svg" class="close-btn max-sm:absolute max-sm:top-10 right-6" name="close" alt="close-icon">
-        </figure>
-        </div>
-        <ul class="sm:flex gap-10 items-center sm:font-medium max-sm:font-semibold max-sm:px-28 max-sm:py-4 max-sm:bg-slate-50 drop-shadow-2xl max-sm:absolute max-sm:top-24 max-sm:left-6">
-          <li class="max-sm:my-8"><a class="hover:text-brightred transition-all duration-200 ease-in" href="#pricing">Pricing</a></li>
-          <li class="max-sm:my-8"><a class="hover:text-brightred transition-all duration-200 ease-in" href="#product">Product</a></li>
-          <li class="max-sm:my-8"><a class="hover:text-brightred transition-all duration-200 ease-in" href="#about-us">About Us</a></li>
-          <li class="max-sm:my-8"><a class="hover:text-brightred transition-all duration-200 ease-in" href="#careers">Careers</a></li>
-          <li class="max-sm:my-8"><a class="hover:text-brightred transition-all duration-200 ease-in" href="#community">Community</a></li>
-        </ul>
+      <div class="hamburger sm:hidden block">
+        <img src="./images/icon-hamburger.svg" class="menu max-sm:absolute max-sm:top-10 right-6" name="menu" alt="hamburger-icon">
+        <img src="./images/icon-close.svg" class="close max-sm:absolute max-sm:top-10 right-6 invisible" name="close" alt="close-icon">
       </div>
+      <ul class="linkNav sm:flex gap-10 items-center opacity-0 sm:font-medium max-sm:font-semibold max-sm:px-28 max-sm:py-4 max-sm:bg-slate-50 drop-shadow-2xl max-sm:absolute max-sm:top-24 max-sm:left-6 max-sm:rounded-lg">
+        <li class="max-sm:my-8"><a class="links hover:text-brightred transition-all duration-200 ease-in" href="#pricing">Pricing</a></li>
+        <li class="max-sm:my-8"><a class="links hover:text-brightred transition-all duration-200 ease-in" href="#product">Product</a></li>
+        <li class="max-sm:my-8"><a class="links hover:text-brightred transition-all duration-200 ease-in" href="#about-us">About Us</a></li>
+        <li class="max-sm:my-8"><a class="links hover:text-brightred transition-all duration-200 ease-in" href="#careers">Careers</a></li>
+        <li class="max-sm:my-8"><a class="links hover:text-brightred transition-all duration-200 ease-in" href="#community">Community</a></li>
+      </ul>
       <div class="button">
         <button class="px-8 py-2 -mt-2 rounded-3xl bg-brightred hover:opacity-50 hover:text-white max-sm:hidden transition-all duration-200 ease-in" type="submit">Get Started</button>
       </div>
